@@ -99,3 +99,41 @@ const displayFlag = async function () {
     alert(`Problem fetching weather data`)
   }
 };
+
+// const checkWeather = async function () {
+
+// };
+forecast.addEventListener("click", function () {
+  forecast.innerHTML=`<i class="fa fa-spinner fa-spin"></i> checking`
+  displayFlag();
+  mainInput.value = '';
+
+  setTimeout(() => {
+    forecast.innerHTML=`weather`
+  }, 3000);
+});
+
+let date = new Date();
+console.log(date);
+
+
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': 'd25ee53e3fmsh0ed016d4244589ap1aedd4jsncb9afff296d1',
+// 		'X-RapidAPI-Host': 'aerisweather1.p.rapidapi.com'
+// 	}
+// };
+
+// fetch('https://aerisweather1.p.rapidapi.com/sunmoon/ankara,tr', options)
+// 	.then(response => response.json())
+// 	.then(response => console.log(response))
+// 	.catch(err => console.error(err));
+
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': 'd25ee53e3fmsh0ed016d4244589ap1aedd4jsncb9afff296d1',
+// 		'X-RapidAPI-Host': 'pl12133-weatherspot-v1.p.rapidapi.com'
+// 	}
+// };
