@@ -9,7 +9,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     background-image: url(img/ice2.jpg);
     background-size: cover;
@@ -25,6 +24,31 @@ header{
 }
 header p{
     font-size: 1.6rem;
+}
+.app_header{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.main_input{
+    padding: 0.8vh;
+    font-size: 1.2rem;
+    width: 70vw;
+    grid-gap: 1vw;
+}
+.input_area{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 80vw;
+    margin: 2vh auto;
+}
+.weather{
+    padding: 2vh 2vw;
+    border-radius: 2rem;
+    border: 0;
+    background-color: var(--brand-color);
+    color: var(--color-plane);
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 .country_flag{
     width: 26vw;
@@ -49,7 +73,6 @@ header p{
     align-self: center;
     align-content: center;
 }
-
 .display_result{
     margin: 5vh auto;
     margin-bottom: 8vh;
