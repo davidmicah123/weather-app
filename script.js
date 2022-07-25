@@ -137,3 +137,9 @@ console.log(date);
 // 		'X-RapidAPI-Host': 'pl12133-weatherspot-v1.p.rapidapi.com'
 // 	}
 // };
+
+
+// fetch('https://pl12133-weatherspot-v1.p.rapidapi.com/db/query.php', options)
+// 	.then(response => response.json())
+// 	.then(response => console.log(response))
+// 	.catch(err => console.error(err));
