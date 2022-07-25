@@ -27,3 +27,31 @@ const displayFlag = async function () {
       // console.log(data);
       // const flag = await data[0].flag;
       // console.log(flag);
+       // const html = `
+      // 	<div class="count_flag_area">
+      // 		<img src="${data[0].flag}" alt="failed to load flag" class="country_flag">
+      // 	</div>
+      // `;
+      // responseArea.insertAdjacentHTML("beforeend", html);
+
+      // const coords = await data[0].latlng;
+      // console.log(coords)
+      // const { lat, lng } = coords;
+      // console.log(lat, lng)
+      // const countryData = await fetch(
+      //   `https://api.openweathermap.org/data/2.5/weather?lat=${coords[0]}&lon=${coords[1]}&appid=a2f17b3ac241e448768846ba928392b8`
+      // );
+      const countryData = await fetch(
+        `https://api.openweathermap.org/data/2.5/weather?q=${mainInput.value}&appid=a2f17b3ac241e448768846ba928392b8`
+      );
+      if(!countryData) throw new Error(`problem fetching country data`);
+      const res2 = await countryData.json();
+      const data2 = await res2;
+      if(!data2) throw new Error(`problem fetching country data`);
+      console.log(data2);
+      // const teamperature = await data2.temp[0];
+      //   const html2 = `
+      // 		<div>
+      
+      // 		</div>
+      // 	`;
