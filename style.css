@@ -9,3 +9,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-image: url(img/ice2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Slab', serif;
+}
+main{
+    text-align: center;
+}
+header{
+    margin: 2vh auto;
+    padding: 2vh 0;
+}
+header p{
+    font-size: 1.6rem;
+}
