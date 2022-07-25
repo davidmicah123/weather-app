@@ -55,3 +55,47 @@ const displayFlag = async function () {
       
       // 		</div>
       // 	`;
+      const temperature = data2.main.temp;
+      console.log(temperature);
+
+      const celcius = (temperature - 273.1).toFixed(1);
+      console.log(celcius)
+
+      const countryCode = data2.sys.country;
+      console.log(countryCode)
+      const country = await fetch(
+        `https://restcountries.com/v2/alpha/${countryCode}`
+      );
+      const resp = await country.json();
+      const data = await resp;
+      console.log(data);
+      const flag = await data.flag;
+      console.log(flag);
+
+      // const countryName = country.name;
+      // console.log(countryName)
+      const html = `
+        <div class="response_area">
+          <img src="${flag}" alt="" class="country_flag">
+          <div class="details_area">
+              <div class="forecast_wrapper">
+                <h1 class="main_temp">${celcius}&deg;C</h1>
+                <h3>${data2.name}, ${data.name}</h3>
+                <p class="forecast_description">${data2.weather[0].main}: ${data2.weather[0].description}</p>
+              </div>
+          </div>
+        </div>
+      `;
+      // const html = `
+      // 	<div class="count_flag_area">
+      // 		<img src="${flag}" alt="failed to load flag" class="country_flag">
+      // 	</div>
+      // `;
+      displayResult.insertAdjacentHTML("beforeend", html);
+      forecast.addEventListener('click', function(){
+        displayResult.innerHTML = ""
+      });
+  } catch (err) {
+    alert(`Problem fetching weather data`)
+  }
+};
