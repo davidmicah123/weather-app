@@ -49,3 +49,31 @@ header p{
     align-self: center;
     align-content: center;
 }
+
+.display_result{
+    margin: 5vh auto;
+    margin-bottom: 8vh;
+}
+.response_area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+    background-color: white;
+    width: 60vw;
+    margin: 2vh auto;
+}
+.main_temp{
+    font-size: 5rem;
+}
+.forecast_description{
+    font-size: 1.8rem;
+}
+
+
+footer{
+    font-size: 2rem;
+}
+footer a{
+    color: var(--color-neutral);
+    /* text-decoration: none; */
+}
