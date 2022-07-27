@@ -47,3 +47,30 @@ body{
         margin: 1vh auto;
     }
 }
+
+@media (max-width: 550px) {
+    .app_header{
+        font-size: 2rem;
+    }
+    header p{
+        font-size: 1.2rem;
+    }
+    body{
+        padding-bottom: 3vh;
+    }
+    footer{
+        font-size: 1.5rem;
+    }
+    .response_area {
+        width: 70vw;
+    }
+    .country_flag{
+        width: 100%;
+        border: 0;
+        height: 100%;
+    }
+    .details_area{
+        width: 100%;
+    }
+}
+
