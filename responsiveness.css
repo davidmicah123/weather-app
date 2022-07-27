@@ -17,3 +17,33 @@ body{
         width: 85vw;
     }
 }
+@media (max-width: 750px){
+    .response_area{
+        width: 60vw;
+    }
+    .response_area{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .country_flag{
+        height: 20vh;
+    }
+    .details_area{
+        height: 27vh;
+    }
+    header{
+        width: 85vw;
+    }
+    .input_area{
+        grid-template-columns: 1fr;
+        grid-gap: 1vh;
+        text-align: center;
+    }
+    .main_input{
+        width: 100%;
+    }
+    .weather{
+        width: 50%;
+        margin: 1vh auto;
+    }
+}
