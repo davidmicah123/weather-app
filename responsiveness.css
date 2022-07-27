@@ -1,1 +1,19 @@
-
+.main_input{
+    border-radius: 2rem;
+    border: 0;
+}
+body{
+    overflow-x: hidden;
+    padding-bottom: 3vh;
+}
+@media (max-width: 950px) {
+    .response_area{
+        width: 75vw;
+    }
+    .country_flag{
+        width: 100%;
+        border: 0;
+    }header{
+        width: 85vw;
+    }
+}
