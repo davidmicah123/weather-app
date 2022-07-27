@@ -74,3 +74,28 @@ body{
     }
 }
 
+@media (max-width: 450px) {
+    .response_area{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 370px) {
+    .app_header{
+        font-size: 1.5rem;
+        margin: 1vh 0;
+    }
+    header p{
+        font-size: 1.2rem;
+    }
+    footer{
+        font-size: 1.2rem;
+    }
+    .main_temp{
+        font-size: 3rem;
+    }
+    .forecast_description{
+        font-size: 1.5rem;
+    }
+}
+
