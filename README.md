@@ -1,6 +1,8 @@
-# weather-app
+# weather-app 
 I made this weather app: 
 https://davidmicah123.github.io/weather-app/
+
+The weather app allows you to search for a location then it gives you the weather forecast of the particular location 
 
 ### IMAGES:
 ## Mobile view:
